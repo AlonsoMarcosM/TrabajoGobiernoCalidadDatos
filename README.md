@@ -25,9 +25,6 @@ La solución se articula en **6 proyectos** que aplican los procesos UNE 0077/00
 ```
 TrabajoGobiernoCalidadDatos/
 ├── README.md                               ← este archivo
-├── practicatransversal.md                  (enunciado — read-only)
-├── guiadeestudio.md                        (calendario — read-only)
-├── guiadocenteasignatura.md                (guía docente — read-only)
 └── entregable/
     ├── 00-resumen-ejecutivo.md
     ├── 01-proyecto1-procesamiento-y-requisitos.md
@@ -45,7 +42,7 @@ TrabajoGobiernoCalidadDatos/
     │   ├── procedimientos-medicion.md
     │   └── plan-mejora-madurez.md
     └── defensa/
-        └── presentacion.md                 (Marp → exportar a PDF)
+        └── presentacion.pptx                 (Marp → exportar a PDF)
 ```
 
 ---
