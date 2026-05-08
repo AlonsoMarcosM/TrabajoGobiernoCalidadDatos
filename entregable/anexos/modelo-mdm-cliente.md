@@ -1,6 +1,6 @@
 # Anexo — Modelo de Datos Maestros: Cliente
 
-> Producto de trabajo de UNE 0078 §3.10.1.4 — *Modelo del dato maestro y sus jerarquías* + *Repositorio del metadato del negocio extendido con la definición y jerarquías del dato maestro*.
+> Producto de trabajo de UNE 0078 3.10.1.4 — *Modelo del dato maestro y sus jerarquías* + *Repositorio del metadato del negocio extendido con la definición y jerarquías del dato maestro*.
 > **Versión:** 1.0 · **Fecha:** 2026-04-16 · **Aprobador:** CDO + Arquitecto del Dato.
 
 ## 1. Esquema lógico del Cliente Maestro
@@ -79,7 +79,7 @@ Score final ∈ [0, 1]. Decisión:
 
 ## 4. Reglas de *survivorship* (golden record)
 
-Tabla resumida en el documento principal §4.2.2. Para cada atributo se documenta:
+Tabla resumida en el documento principal 4.2.2. Para cada atributo se documenta:
 - **Regla** (más reciente, más completa, regla de negocio).
 - **Sistema preferente**.
 - **Sistema de respaldo** si la fuente preferente está vacía.

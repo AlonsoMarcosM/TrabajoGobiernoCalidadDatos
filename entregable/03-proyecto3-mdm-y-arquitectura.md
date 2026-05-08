@@ -13,11 +13,11 @@ Definir un **modelo de datos maestros para la entidad Cliente** y proponer una *
 
 | ID | Entregable | Ubicación |
 |---|---|---|
-| E3.1 | Modelo conceptual del Cliente Maestro y su jerarquía | §4.1 + [`anexos/modelo-mdm-cliente.md`](anexos/modelo-mdm-cliente.md) |
-| E3.2 | Estrategia de matching y *golden record* | §4.2 |
-| E3.3 | Identificación del SOR (System of Records) y datos de referencia | §4.3 |
-| E3.4 | Arquitectura de datos integrada con MDM | §4.4 |
-| E3.5 | Patrón de integración y políticas de sincronización | §4.5 |
+| E3.1 | Modelo conceptual del Cliente Maestro y su jerarquía | 4.1 + [`anexos/modelo-mdm-cliente.md`](anexos/modelo-mdm-cliente.md) |
+| E3.2 | Estrategia de matching y *golden record* | 4.2 |
+| E3.3 | Identificación del SOR (System of Records) y datos de referencia | 4.3 |
+| E3.4 | Arquitectura de datos integrada con MDM | 4.4 |
+| E3.5 | Patrón de integración y políticas de sincronización | 4.5 |
 
 ## 2. Criterio de aceptación
 
@@ -30,10 +30,10 @@ Definir un **modelo de datos maestros para la entidad Cliente** y proponer una *
 
 | Apartado UNE | Aporte concreto |
 |---|---|
-| UNE 0078 §3.10 — Gestión del dato maestro | Define resultados (modelo, repositorio, golden record, calidad), tareas (identificación, consolidación, publicación) y productos (modelo, plan de consolidación, mecanismos de control). |
-| UNE 0078 §3.8 — Gestión de la arquitectura y diseño del dato | Pide modelos conceptual / lógico / físico y revisión de la infraestructura tecnológica. |
-| UNE 0078 §3.9 — Compartición, intermediación e integración del dato | Aporta los mecanismos ETL/ELT y los acuerdos de nivel de servicio para la consolidación MDM. |
-| UNE 0078 §3.6 — Gestión de seguridad del dato | RGPD/ENS aplicados a PII identificativa del cliente. |
+| UNE 0078 3.10 — Gestión del dato maestro | Define resultados (modelo, repositorio, golden record, calidad), tareas (identificación, consolidación, publicación) y productos (modelo, plan de consolidación, mecanismos de control). |
+| UNE 0078 3.8 — Gestión de la arquitectura y diseño del dato | Pide modelos conceptual / lógico / físico y revisión de la infraestructura tecnológica. |
+| UNE 0078 3.9 — Compartición, intermediación e integración del dato | Aporta los mecanismos ETL/ELT y los acuerdos de nivel de servicio para la consolidación MDM. |
+| UNE 0078 3.6 — Gestión de seguridad del dato | RGPD/ENS aplicados a PII identificativa del cliente. |
 | ISO 8000-100 a 8000-150 | Familia *Master data: Exchange of characteristic data*: provenance, accuracy, completeness, identifiers. |
 | ISO/IEC 25012 / 25024 | Calidad de la información del repositorio maestro. |
 
@@ -43,7 +43,7 @@ Definir un **modelo de datos maestros para la entidad Cliente** y proponer una *
 
 ### 4.1 Creación de datos maestros — Modelo conceptual del Cliente
 
-UNE 0078 §3.10.1.3, tarea *"Identificar los datos maestros y sus jerarquías"* y *"Definir y aprobar un modelo conceptual del dato maestro"*.
+UNE 0078 3.10.1.3, tarea *"Identificar los datos maestros y sus jerarquías"* y *"Definir y aprobar un modelo conceptual del dato maestro"*.
 
 #### 4.1.1 Modelo conceptual
 
@@ -96,7 +96,7 @@ classDiagram
 
 #### 4.1.2 Clasificación de atributos
 
-Siguiendo la práctica MDM extendida (DAMA-DMBOK 2.0 + UNE 0078 §3.10):
+Siguiendo la práctica MDM extendida (DAMA-DMBOK 2.0 + UNE 0078 3.10):
 
 | Categoría | Atributos | Función |
 |---|---|---|
@@ -118,7 +118,7 @@ Siguiendo la práctica MDM extendida (DAMA-DMBOK 2.0 + UNE 0078 §3.10):
 
 #### 4.2.1 Algoritmo de matching (resolución de entidad)
 
-UNE 0078 §3.10.1.3 → *"Resolver los conflictos que puedan existir entre los elementos de distintos registros del sistema de registro (record linkage) mediante la implementación de técnicas de resolución de entidad (entity resolution)"*.
+UNE 0078 3.10.1.3 → *"Resolver los conflictos que puedan existir entre los elementos de distintos registros del sistema de registro (record linkage) mediante la implementación de técnicas de resolución de entidad (entity resolution)"*.
 
 **Pipeline propuesto** (en SparkML / Splink):
 
@@ -155,7 +155,7 @@ Estrategia **survivorship rules** atributo a atributo:
 | Criticidad | Máximo entre los sistemas (regla conservadora) | Comercializadora |
 | Tarifa actual | Última activa | ERP SAP |
 
-> La regla y la fuente quedan registradas en la tabla `FuenteCalidad` para trazabilidad (UNE 0078 §3.10.1.4 — *Informes periódicos del nivel de calidad del dato del repositorio maestro*).
+> La regla y la fuente quedan registradas en la tabla `FuenteCalidad` para trazabilidad (UNE 0078 3.10.1.4 — *Informes periódicos del nivel de calidad del dato del repositorio maestro*).
 
 ### 4.3 Sistema de Registros (SOR) y datos de referencia
 
@@ -179,11 +179,11 @@ Estrategia **survivorship rules** atributo a atributo:
 | Calendario de festivos | Boletines oficiales | Anual |
 | Códigos ENTSO-E de zonas | ENTSO-E | Anual |
 
-> Distinguimos **dato maestro** (entidad clave del negocio: Cliente, Producto, Activo) frente a **dato de referencia** (conjunto cerrado de valores compartidos), siguiendo la nomenclatura de UNE 0078 §3.10.1.2.
+> Distinguimos **dato maestro** (entidad clave del negocio: Cliente, Producto, Activo) frente a **dato de referencia** (conjunto cerrado de valores compartidos), siguiendo la nomenclatura de UNE 0078 3.10.1.2.
 
 ### 4.4 Arquitectura de datos
 
-UNE 0078 §3.8.1.2 — modelos conceptual / lógico / físico y revisión de infraestructura.
+UNE 0078 3.8.1.2 — modelos conceptual / lógico / físico y revisión de infraestructura.
 
 #### 4.4.1 Estilo arquitectónico MDM elegido
 
@@ -270,17 +270,17 @@ La arquitectura no implementa el modelo predictivo, pero sí garantiza el **sopo
 - **Transformación**: pipelines Spark/dbt; pipeline MDM dedicado.
 - **Almacenamiento**: medallion + MDM Hub + datos de referencia.
 - **Explotación**: API DaaS y capa Gold consumida por el modelo IA y BI.
-- **Retirada**: política de retención por capa (definida en P2 §4.4).
+- **Retirada**: política de retención por capa (definida en P2 4.4).
 
 ### 4.5 Integración y políticas de sincronización
 
-UNE 0078 §3.9 + §3.6.
+UNE 0078 3.9 + 3.6.
 
 | Política | Decisión |
 |---|---|
 | Patrón de propagación | *Hub-and-spoke*: el MDM Hub es la pieza central; las apps consumen vía API DaaS. |
 | Latencia objetivo | CDC (Change Data Capture) con latencia ≤ 5 min entre SOR y MDM. |
-| Resolución de conflictos | Reglas de *survivorship* (§4.2.2). En empate, prevalece la fuente con mayor calidad histórica medida por P5. |
+| Resolución de conflictos | Reglas de *survivorship* (4.2.2). En empate, prevalece la fuente con mayor calidad histórica medida por P5. |
 | Seguridad | Acceso por API a través de pasarela con OAuth2 y registro en SIEM (RS-02). |
 | Calidad mínima publicable | Publicar `cliente_maestro` solo cuando completitud ≥ 99 % en atributos *Must* del catálogo de requisitos. |
 | Versionado | SCD tipo 2 sobre `cliente_maestro` con historial completo y `version` incremental. |
@@ -293,7 +293,7 @@ UNE 0078 §3.9 + §3.6.
 | P2 | El catálogo y diccionario añaden la entrada `mdm.cliente_maestro` derivada de este proyecto. |
 | P4 | Las características de calidad UNE 0081 se medirán sobre `mdm.cliente_maestro` además de las tablas raw. |
 | P5 | Procedimientos de monitorización aplicados al MDM Hub. |
-| P6 | Evidencias de los procesos UNE 0078 §3.10, §3.8, §3.9. |
+| P6 | Evidencias de los procesos UNE 0078 3.10, 3.8, 3.9. |
 
 ## 6. Decisiones y supuestos
 
@@ -304,7 +304,7 @@ UNE 0078 §3.9 + §3.6.
 
 ## 7. Referencias
 
-- UNE 0078:2023 — §3.10 Gestión del dato maestro; §3.8 Gestión de la arquitectura y diseño del dato; §3.9 Compartición, intermediación e integración del dato.
+- UNE 0078:2023 — 3.10 Gestión del dato maestro; 3.8 Gestión de la arquitectura y diseño del dato; 3.9 Compartición, intermediación e integración del dato.
 - ISO 8000-100/110/120/130/140 — *Master data: Exchange of characteristic data*.
 - DAMA-DMBOK 2.0 — Capítulos 9 (Reference & Master Data) y 4 (Data Architecture).
 - Fellegi & Sunter (1969) — *A Theory for Record Linkage*.

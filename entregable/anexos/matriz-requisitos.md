@@ -1,6 +1,6 @@
 # Anexo — Matriz de Requisitos del Dato (EnergiTech · Previsión de Demanda)
 
-> Producto de trabajo de UNE 0078 §3.3.1.4 — *Catálogo actualizado y validado de requisitos del dato con su prioridad establecida*.
+> Producto de trabajo de UNE 0078 3.3.1.4 — *Catálogo actualizado y validado de requisitos del dato con su prioridad establecida*.
 > **Versión:** 1.0 · **Fecha:** 2026-03-26 · **Aprobador:** Director del Dato (CDO).
 
 ## Leyenda

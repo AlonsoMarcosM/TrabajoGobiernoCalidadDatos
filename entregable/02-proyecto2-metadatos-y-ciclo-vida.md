@@ -17,13 +17,13 @@ Construir tres repositorios reconciliados de metadatos —**glosario de negocio,
 | E2.1 | Glosario de negocio (≥ 25 términos del dominio) | [`anexos/glosario-negocio.md`](anexos/glosario-negocio.md) |
 | E2.2 | Catálogo de datos (sistemas, tablas, propietarios, sensibilidad) | [`anexos/catalogo-datos.md`](anexos/catalogo-datos.md) |
 | E2.3 | Diccionario de datos (campos físicos, tipos, restricciones, PII) | [`anexos/diccionario-datos.md`](anexos/diccionario-datos.md) |
-| E2.4 | Diagrama de trazabilidad de los tres tipos de metadatos | §4.2 de este documento |
-| E2.5 | Modelo de ciclo de vida y controles de validación | §4.3 de este documento |
-| E2.6 | Mapa de políticas de uso del dato | §4.4 de este documento |
+| E2.4 | Diagrama de trazabilidad de los tres tipos de metadatos | 4.2 de este documento |
+| E2.5 | Modelo de ciclo de vida y controles de validación | 4.3 de este documento |
+| E2.6 | Mapa de políticas de uso del dato | 4.4 de este documento |
 
 ## 2. Criterio de aceptación
 
-- Los tres repositorios contienen, como mínimo, el conjunto de datos identificado en P1 §4.1.2.
+- Los tres repositorios contienen, como mínimo, el conjunto de datos identificado en P1 4.1.2.
 - Cada término de negocio enlaza con al menos una entrada del catálogo y con uno o más campos del diccionario.
 - El ciclo de vida cubre las cuatro fases del enunciado (`Ingesta → Transformación → Almacenamiento → Explotación`) y declara controles por fase.
 - Existe una propuesta de herramienta (OpenMetadata) con justificación funcional (Nota 4).
@@ -32,11 +32,11 @@ Construir tres repositorios reconciliados de metadatos —**glosario de negocio,
 
 | Apartado UNE | Aporte concreto |
 |---|---|
-| UNE 0078 §3.7.1 — Gestión del metadato | Define los **tres tipos de metadatos** (negocio, técnico, operativo) que estructuran este proyecto. |
-| UNE 0078 §3.7.1.4 — Productos de trabajo | Lista los repositorios poblados (glosario, catálogo, diccionario) que constituyen los entregables E2.1–E2.3. |
-| UNE 0078 §3.12 — Gestión del ciclo de vida del dato | Aporta resultados de proceso: identificación de etapas, políticas, controles y monitorización. |
-| ISO/IEC 11179 (referida en §3.7.3) | Marco normativo para registro de metadatos. |
-| ISO/IEC 25012 / 25024 (referidas en §3.7.3 y §3.12.3) | Calidad y modelos de ciclo de vida del dato. |
+| UNE 0078 3.7.1 — Gestión del metadato | Define los **tres tipos de metadatos** (negocio, técnico, operativo) que estructuran este proyecto. |
+| UNE 0078 3.7.1.4 — Productos de trabajo | Lista los repositorios poblados (glosario, catálogo, diccionario) que constituyen los entregables E2.1–E2.3. |
+| UNE 0078 3.12 — Gestión del ciclo de vida del dato | Aporta resultados de proceso: identificación de etapas, políticas, controles y monitorización. |
+| ISO/IEC 11179 (referida en 3.7.3) | Marco normativo para registro de metadatos. |
+| ISO/IEC 25012 / 25024 (referidas en 3.7.3 y 3.12.3) | Calidad y modelos de ciclo de vida del dato. |
 | UNE 0087 (citada en el enunciado) | Tres tipos de metadatos: negocio / técnico / operativo. |
 
 ---
@@ -45,7 +45,7 @@ Construir tres repositorios reconciliados de metadatos —**glosario de negocio,
 
 ### 4.1 Creación de los tres repositorios de metadatos
 
-Aplicación literal de UNE 0078 §3.7.1.3, tarea *"Poblar los repositorios del metadato"*.
+Aplicación literal de UNE 0078 3.7.1.3, tarea *"Poblar los repositorios del metadato"*.
 
 #### 4.1.1 Repositorio 1 — Glosario de negocio (metadatos de negocio)
 
@@ -134,11 +134,11 @@ graph TD
     class F1,F2,F3,F4 ope;
 ```
 
-> Cada relación se materializa en OpenMetadata mediante referencias `glossaryTerm ↔ table ↔ column`, cubriendo el resultado de proceso *"Establecer las relaciones entre los metadatos"* (UNE 0078 §3.7.1.3).
+> Cada relación se materializa en OpenMetadata mediante referencias `glossaryTerm ↔ table ↔ column`, cubriendo el resultado de proceso *"Establecer las relaciones entre los metadatos"* (UNE 0078 3.7.1.3).
 
 ### 4.3 Gestión del ciclo de vida del dato
 
-Aplicación literal de UNE 0078 §3.12.1.2 (resultados) y §3.12.1.3 (tareas).
+Aplicación literal de UNE 0078 3.12.1.2 (resultados) y 3.12.1.3 (tareas).
 
 #### 4.3.1 Modelo del ciclo de vida (cuatro fases del enunciado)
 
@@ -149,7 +149,7 @@ stateDiagram-v2
     Transformacion --> Almacenamiento: dataset depurado
     Almacenamiento --> Explotacion: producto de datos
     Explotacion --> [*]: previsión publicada
-    Almacenamiento --> Retirada: dato histórico (UNE 0078 §3.5)
+    Almacenamiento --> Retirada: dato histórico (UNE 0078 3.5)
     Retirada --> [*]
     note right of Ingesta
       Smart-meters · CRM · API meteo
@@ -165,7 +165,7 @@ stateDiagram-v2
     end note
 ```
 
-#### 4.3.2 Controles por fase (resultado de UNE 0078 §3.12.1.2)
+#### 4.3.2 Controles por fase (resultado de UNE 0078 3.12.1.2)
 
 | Fase | Controles de validación | Reglas concretas (caso EnergiTech) |
 |---|---|---|
@@ -173,7 +173,7 @@ stateDiagram-v2
 | **Transformación** | Reglas de negocio, pseudonimización, deduplicación, controles de calidad | Pseudonimizar PII (RS-01); deduplicar por (`id_punto_suministro`, `timestamp_utc`); imputar gaps < 2 h por interpolación; flag `anomaly` por reglas RQ-01/RQ-02. |
 | **Almacenamiento** | Particionado, versionado, control de acceso (RBAC), retención | Particionar por fecha; conservar bronze 90 d, silver 2 a, gold 7 a; cifrar a reposo (AES-256). |
 | **Explotación** | Auditoría de acceso, validación contractual, certificación de DQ | Log de cada consulta (RS-02); el modelo predictivo solo accede a columnas marcadas `safe_for_analytics=true`. |
-| **Retirada** | Plan de retención, anonimización irreversible, certificación de borrado | Aplicar UNE 0078 §3.5 *Gestión del dato histórico*; anonimizar tras retención y registrar evidencia. |
+| **Retirada** | Plan de retención, anonimización irreversible, certificación de borrado | Aplicar UNE 0078 3.5 *Gestión del dato histórico*; anonimizar tras retención y registrar evidencia. |
 
 #### 4.3.3 Diagrama de flujo entre repositorios
 
@@ -198,7 +198,7 @@ flowchart LR
 
 ### 4.4 Políticas asociadas al ciclo de vida
 
-UNE 0078 §3.12.1.2 exige *"identificar las políticas que deben aplicarse al dato en cada etapa, así como los controles asociados"*. Mapa propuesto:
+UNE 0078 3.12.1.2 exige *"identificar las políticas que deben aplicarse al dato en cada etapa, así como los controles asociados"*. Mapa propuesto:
 
 | Política | Lo que se puede hacer | Lo que NO se puede hacer | Restricciones / etapa |
 |---|---|---|---|
@@ -210,7 +210,7 @@ UNE 0078 §3.12.1.2 exige *"identificar las políticas que deben aplicarse al da
 
 ### 4.5 Gestión del propio metadato como activo
 
-UNE 0078 §3.7.1.2 indica que el metadato debe **publicarse** y fomentarse su uso. Plan operativo mínimo:
+UNE 0078 3.7.1.2 indica que el metadato debe **publicarse** y fomentarse su uso. Plan operativo mínimo:
 
 - Publicación: portal interno de catálogo (OpenMetadata).
 - Roles: cada término tiene un *steward* del dato responsable del mantenimiento.
@@ -224,17 +224,17 @@ UNE 0078 §3.7.1.2 indica que el metadato debe **publicarse** y fomentarse su us
 | P3 (MDM/Arquitectura) | El catálogo y el diccionario alimentan el modelo MDM Cliente y la arquitectura de datos. |
 | P4 (Calidad) | Los términos del glosario son la unidad de medida para las características UNE 0081. |
 | P5 (Control DQ) | El catálogo de datos identifica los activos donde se ejecutan los procedimientos. |
-| P6 (Madurez) | Evidencias de los procesos UNE 0078 §3.7 y §3.12. |
+| P6 (Madurez) | Evidencias de los procesos UNE 0078 3.7 y 3.12. |
 
 ## 6. Decisiones y supuestos
 
-- Se elige el patrón **medallion (bronze/silver/gold)** por su trazabilidad explícita con las fases de UNE 0078 §3.12 y por su uso extendido en plataformas Lakehouse.
+- Se elige el patrón **medallion (bronze/silver/gold)** por su trazabilidad explícita con las fases de UNE 0078 3.12 y por su uso extendido en plataformas Lakehouse.
 - Se asume que el catálogo de datos ya cubre los sistemas operacionales legados (luz, gas, mantenimiento) que originan la duplicidad de clientes (input para P3).
 - OpenMetadata se selecciona como herramienta única para los tres repositorios, sustituyendo enfoques de Excel + ficheros sueltos que no escalan.
 
 ## 7. Referencias
 
-- UNE 0078:2023 — §3.7 Gestión del metadato; §3.12 Gestión del ciclo de vida del dato; §3.5 Gestión del dato histórico.
+- UNE 0078:2023 — 3.7 Gestión del metadato; 3.12 Gestión del ciclo de vida del dato; 3.5 Gestión del dato histórico.
 - UNE 0087 — Gestión de metadatos.
 - ISO/IEC 11179 — *Information technology – Metadata registries (MDR)*.
 - ISO/IEC 25012:2008 — *Software product Quality Requirements and Evaluation (SQuaRE) — Data quality model*.

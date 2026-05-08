@@ -15,26 +15,26 @@ Modelar el proceso de negocio "Cálculo de previsión de demanda energética" y 
 
 | ID | Entregable | Ubicación |
 |---|---|---|
-| E1.1 | Modelo BPMN del proceso de negocio | §3.1 de este documento |
-| E1.2 | Catálogo de actividades y datos por etapa | §3.2 de este documento |
+| E1.1 | Modelo BPMN del proceso de negocio | 3.1 de este documento |
+| E1.2 | Catálogo de actividades y datos por etapa | 3.2 de este documento |
 | E1.3 | Matriz de requisitos del dato | [`anexos/matriz-requisitos.md`](anexos/matriz-requisitos.md) |
-| E1.4 | Matriz de trazabilidad de requisitos | §4.4 de este documento |
+| E1.4 | Matriz de trazabilidad de requisitos | 4.4 de este documento |
 
 ## 2. Criterio de aceptación
 
-- Cada actividad del proceso de negocio identifica los datos de entrada, los datos de salida y, al menos, una instrucción de procesamiento (UNE 0078 §3.1.1.3).
+- Cada actividad del proceso de negocio identifica los datos de entrada, los datos de salida y, al menos, una instrucción de procesamiento (UNE 0078 3.1.1.3).
 - El catálogo contiene ≥ 15 requisitos clasificados por tipo (negocio, dato, seguridad, calidad, infraestructura) y prioridad MoSCoW.
-- Cada requisito declara fuente, propietario, criterio de aceptación y estado de implantación (UNE 0078 §3.3.1.4).
+- Cada requisito declara fuente, propietario, criterio de aceptación y estado de implantación (UNE 0078 3.3.1.4).
 - Existe trazabilidad bidireccional fuente → requisito → dato afectado.
 
 ## 3. Marco normativo aplicado
 
 | Apartado UNE | Aporte concreto a este proyecto |
 |---|---|
-| UNE 0078 §3.1.1.1–3.1.1.4 — Procesamiento del dato | Define las tareas (describir instrucciones de trabajo, generar resultados) y productos (instrucciones validadas, criterios de interpretación) que se modelan en el BPMN. |
-| UNE 0078 §3.3.1.1–3.3.1.4 — Gestión de requisitos del dato | Aporta resultados de proceso (catálogo aprobado, trazabilidad) y productos de trabajo (listado de fuentes, matriz de trazabilidad). |
-| UNE 0078 §3.4 — Gestión de configuración del dato | Soporta la versión y la integridad de los artefactos (Nota 3 del enunciado). Se aplica como anexo de control de versiones. |
-| UNE 0078 §1.1 (13 procesos) | Encuadra el proyecto dentro del sistema de gestión del dato. |
+| UNE 0078 3.1.1.1–3.1.1.4 — Procesamiento del dato | Define las tareas (describir instrucciones de trabajo, generar resultados) y productos (instrucciones validadas, criterios de interpretación) que se modelan en el BPMN. |
+| UNE 0078 3.3.1.1–3.3.1.4 — Gestión de requisitos del dato | Aporta resultados de proceso (catálogo aprobado, trazabilidad) y productos de trabajo (listado de fuentes, matriz de trazabilidad). |
+| UNE 0078 3.4 — Gestión de configuración del dato | Soporta la versión y la integridad de los artefactos (Nota 3 del enunciado). Se aplica como anexo de control de versiones. |
+| UNE 0078 1.1 (13 procesos) | Encuadra el proyecto dentro del sistema de gestión del dato. |
 
 ---
 
@@ -83,7 +83,7 @@ flowchart LR
 
 #### 4.1.2 Catálogo de actividades — datos de entrada/salida e instrucciones de procesamiento
 
-Sigue la estructura de UNE 0078 §3.1.2 (entradas, salidas, instrucciones de trabajo).
+Sigue la estructura de UNE 0078 3.1.2 (entradas, salidas, instrucciones de trabajo).
 
 | Actividad | Datos de entrada | Datos de salida | Instrucción de procesamiento |
 |---|---|---|---|
@@ -96,13 +96,13 @@ Sigue la estructura de UNE 0078 §3.1.2 (entradas, salidas, instrucciones de tra
 | T7 — Revisar resultados | Curva prevista, KPIs históricos | Dictamen preliminar | Comparar contra previsión-1d y MAPE histórico. |
 | T8 — Validar vs. apetito de riesgo | Dictamen, umbral organizacional | Decisión publicar/ajustar | Umbral: MAPE ≤ 5 % residencial, ≤ 8 % industrial. |
 | T9 — Publicar previsión | Curva validada | Producto de datos publicado en cuadro de mandos | Versionar y notificar a operaciones de red, comercializadora y atención al cliente. |
-| T10 — Ajustar parámetros | Dictamen de rechazo | Nuevos parámetros de previsión | Documentar motivo y devolver a T2 (gestión de configuración, UNE 0078 §3.4). |
+| T10 — Ajustar parámetros | Dictamen de rechazo | Nuevos parámetros de previsión | Documentar motivo y devolver a T2 (gestión de configuración, UNE 0078 3.4). |
 
-> Las actividades T1–T10 cubren los **resultados de proceso** declarados en UNE 0078 §3.1.1.2: definición/priorización de objetivos, instrucciones de trabajo, controles de validación y comunicación de resultados.
+> Las actividades T1–T10 cubren los **resultados de proceso** declarados en UNE 0078 3.1.1.2: definición/priorización de objetivos, instrucciones de trabajo, controles de validación y comunicación de resultados.
 
 ### 4.2 Identificación de requisitos del dato
 
-Aplicación literal de UNE 0078 §3.3.1.3 (tareas):
+Aplicación literal de UNE 0078 3.3.1.3 (tareas):
 1. **Identificar fuentes** de requisitos.
 2. **Crear catálogo** validado y aprobado.
 3. **Mantener trazabilidad** entre requisitos implantados y elementos del dato.
@@ -146,7 +146,7 @@ Estado de implantación (Identificado/Aprobado/Implantado/Retirado),
 Versión, Fecha actualización
 ```
 
-> Esta plantilla es la **descripción del producto de trabajo "Catálogo actualizado y validado de requisitos del dato con su prioridad establecida"** (UNE 0078 §3.3.1.4).
+> Esta plantilla es la **descripción del producto de trabajo "Catálogo actualizado y validado de requisitos del dato con su prioridad establecida"** (UNE 0078 3.3.1.4).
 
 #### 4.2.4 Trazabilidad de requisitos
 
@@ -170,11 +170,11 @@ graph LR
     class D1,D2 dat;
 ```
 
-> Este grafo materializa la **matriz de trazabilidad de requisitos del dato** declarada como producto de trabajo en UNE 0078 §3.3.1.4.
+> Este grafo materializa la **matriz de trazabilidad de requisitos del dato** declarada como producto de trabajo en UNE 0078 3.3.1.4.
 
 ### 4.3 Gestión de configuración (Nota 3)
 
-Aplicación ligera de UNE 0078 §3.4:
+Aplicación ligera de UNE 0078 3.4:
 - **Línea base 1.0** del catálogo de requisitos publicada al cierre de la sesión 09.
 - Cualquier petición de cambio se registra con `ID-CR`, justificación, impacto y aprobador.
 - Las versiones se reflejan en la cabecera de cada anexo (`Versión`, `Fecha`).
@@ -189,15 +189,15 @@ Aplicación ligera de UNE 0078 §3.4:
 
 | Proyecto destino | Elemento reutilizado |
 |---|---|
-| P2 (Metadatos y Ciclo de Vida) | Datos identificados en §4.1.2 alimentan el glosario, catálogo y diccionario. |
+| P2 (Metadatos y Ciclo de Vida) | Datos identificados en 4.1.2 alimentan el glosario, catálogo y diccionario. |
 | P3 (MDM y Arquitectura) | Datos `cliente` y `contrato` motivan el modelo MDM Cliente. |
 | P4 (Calidad) | Requisitos `RQ-*` definen las características UNE 0081 a evaluar. |
 | P5 (Control DQ) | Umbral del apetito de riesgo (T8) → procedimientos de medición. |
-| P6 (Madurez) | Evidencia de los procesos UNE 0078 §3.1, §3.3, §3.4. |
+| P6 (Madurez) | Evidencia de los procesos UNE 0078 3.1, 3.3, 3.4. |
 
 ## 6. Referencias
 
-- UNE 0078:2023 — *Gestión del Dato*, §3.1 Procesamiento del dato; §3.3 Gestión de requisitos del dato; §3.4 Gestión de configuración del dato.
+- UNE 0078:2023 — *Gestión del Dato*, 3.1 Procesamiento del dato; 3.3 Gestión de requisitos del dato; 3.4 Gestión de configuración del dato.
 - ISO 8000-61:2016 — *Data quality. Part 61: Data quality management: Process reference model*.
 - RGPD (UE 2016/679) y LOPDGDD 3/2018 — base legal de RS-01, RS-02.
 - Esquema Nacional de Seguridad (ENS) — base legal de RS-03.

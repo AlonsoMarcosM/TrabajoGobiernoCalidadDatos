@@ -13,34 +13,34 @@ Operacionalizar el modelo de calidad de P4 en **procedimientos de medición ejec
 
 | ID | Entregable | Ubicación |
 |---|---|---|
-| E5.1 | Plan de calidad del dato (UNE 0079 §3.1) | §4.1 |
-| E5.2 | Procedimientos de medición (10 campos por procedimiento) | §4.2 + [`anexos/procedimientos-medicion.md`](anexos/procedimientos-medicion.md) |
-| E5.3 | Modelo operativo de control y monitorización (UNE 0079 §3.2) | §4.3 |
-| E5.4 | Cuadro de mandos de calidad (Nota 9) | §4.4 |
-| E5.5 | Flujo de acciones correctivas y ciclo de mejora | §4.5 |
+| E5.1 | Plan de calidad del dato (UNE 0079 3.1) | 4.1 |
+| E5.2 | Procedimientos de medición (10 campos por procedimiento) | 4.2 + [`anexos/procedimientos-medicion.md`](anexos/procedimientos-medicion.md) |
+| E5.3 | Modelo operativo de control y monitorización (UNE 0079 3.2) | 4.3 |
+| E5.4 | Cuadro de mandos de calidad (Nota 9) | 4.4 |
+| E5.5 | Flujo de acciones correctivas y ciclo de mejora | 4.5 |
 
 ## 2. Criterio de aceptación
 
-- Existe **un procedimiento por cada medida** definida en P4 §4.3.
+- Existe **un procedimiento por cada medida** definida en P4 4.3.
 - Cada procedimiento contiene los 10 campos exigidos por el enunciado: característica, dato evaluado, regla, fórmula, frecuencia, herramienta, responsable, umbral, acción correctiva, evidencias.
 - El cuadro de mandos define KPIs, audiencia y frecuencia de revisión.
-- Las acciones correctivas están enlazadas con el proceso UNE 0079 §3.4 (Mejora).
+- Las acciones correctivas están enlazadas con el proceso UNE 0079 3.4 (Mejora).
 
 ## 3. Marco normativo aplicado
 
 | Apartado | Aporte |
 |---|---|
-| UNE 0079 §3.1 — Planificación de calidad del dato | Define qué medir, sobre qué activos, con qué frecuencia y para qué destinatarios. |
-| UNE 0079 §3.2 — Control y monitorización de calidad del dato | Define el ciclo medir → comparar → escalar → corregir → registrar. |
-| UNE 0079 §3.4 — Mejora de calidad del dato | Vincula las no conformidades con acciones correctivas y de mejora continua. |
-| UNE 0081 §4.4 — Ejecutar la evaluación | Implementación concreta de las medidas declaradas en P4. |
-| UNE 0081 §4.5 — Finalizar la evaluación | Genera los informes de calidad y la disposición de los resultados. |
+| UNE 0079 3.1 — Planificación de calidad del dato | Define qué medir, sobre qué activos, con qué frecuencia y para qué destinatarios. |
+| UNE 0079 3.2 — Control y monitorización de calidad del dato | Define el ciclo medir → comparar → escalar → corregir → registrar. |
+| UNE 0079 3.4 — Mejora de calidad del dato | Vincula las no conformidades con acciones correctivas y de mejora continua. |
+| UNE 0081 4.4 — Ejecutar la evaluación | Implementación concreta de las medidas declaradas en P4. |
+| UNE 0081 4.5 — Finalizar la evaluación | Genera los informes de calidad y la disposición de los resultados. |
 
 ---
 
 ## 4. Desarrollo
 
-### 4.1 Plan de calidad del dato (UNE 0079 §3.1)
+### 4.1 Plan de calidad del dato (UNE 0079 3.1)
 
 | Elemento del plan | Decisión EnergiTech |
 |---|---|
@@ -84,7 +84,7 @@ Cód: PM-XX-NN
 10. Evidencias generadas (logs, informes, tickets)
 ```
 
-### 4.3 Modelo operativo de control y monitorización (UNE 0079 §3.2)
+### 4.3 Modelo operativo de control y monitorización (UNE 0079 3.2)
 
 ```mermaid
 flowchart LR
@@ -95,7 +95,7 @@ flowchart LR
     E --> F[5. Aplicar<br/>acción correctiva]
     F --> G[6. Verificar<br/>re-medición]
     G -->|cerrado| C
-    G -->|recurrente| H[7. Escalar a<br/>Mejora 0079§3.4]
+    G -->|recurrente| H[7. Escalar a<br/>Mejora 00793.4]
     H --> I[8. Plan de<br/>mejora]
     I --> A
 ```
@@ -159,7 +159,7 @@ flowchart TB
 - **Airflow** como orquestador de mediciones programadas.
 - **Slack / Teams + ServiceNow** como canal de tickets DQ.
 
-### 4.5 Acciones correctivas y conexión con UNE 0079 §3.4 (Mejora)
+### 4.5 Acciones correctivas y conexión con UNE 0079 3.4 (Mejora)
 
 Cada procedimiento define una **acción correctiva inmediata** y, si la no conformidad se repite, escala al **proceso de mejora**.
 
@@ -173,17 +173,17 @@ Cada procedimiento define una **acción correctiva inmediata** y, si la no confo
 
 #### 4.5.1 Trazabilidad de no conformidades
 
-Cada ticket registra: `id, medida, valor, umbral, fecha, severidad, causa raíz (5 porqués), acción inmediata, acción de mejora, status, tiempo de cierre, evidencias`. Los datos sirven luego como evidencia para el proceso UNE 0079 §3.4 (Mejora) y para la evaluación de madurez (P6).
+Cada ticket registra: `id, medida, valor, umbral, fecha, severidad, causa raíz (5 porqués), acción inmediata, acción de mejora, status, tiempo de cierre, evidencias`. Los datos sirven luego como evidencia para el proceso UNE 0079 3.4 (Mejora) y para la evaluación de madurez (P6).
 
 ## 5. Trazabilidad con otros proyectos
 
 | Proyecto | Conexión |
 |---|---|
-| P1 | Las acciones correctivas pueden generar peticiones de cambio (UNE 0078 §3.4 Configuración). |
+| P1 | Las acciones correctivas pueden generar peticiones de cambio (UNE 0078 3.4 Configuración). |
 | P2 | Los resultados se publican en OpenMetadata como metadato operativo de calidad. |
 | P3 | PM-CS-02 evalúa el éxito del MDM y orienta sus mejoras. |
 | P4 | Cada procedimiento implementa exactamente una medida del modelo. |
-| P6 | Evidencia de los procesos UNE 0079 §3.1, §3.2, §3.4 implantados. |
+| P6 | Evidencia de los procesos UNE 0079 3.1, 3.2, 3.4 implantados. |
 
 ## 6. Decisiones y supuestos
 
@@ -193,6 +193,6 @@ Cada ticket registra: `id, medida, valor, umbral, fecha, severidad, causa raíz 
 
 ## 7. Referencias
 
-- UNE 0079:2023 — *Gestión de la Calidad del Dato*. §3.1 Planificación; §3.2 Control y monitorización; §3.4 Mejora.
-- UNE 0081:2023 — §4.4 Ejecutar la evaluación; §4.5 Finalizar la evaluación.
+- UNE 0079:2023 — *Gestión de la Calidad del Dato*. 3.1 Planificación; 3.2 Control y monitorización; 3.4 Mejora.
+- UNE 0081:2023 — 4.4 Ejecutar la evaluación; 4.5 Finalizar la evaluación.
 - ISO 8000-61:2016 — *Data quality management: Process reference model*.

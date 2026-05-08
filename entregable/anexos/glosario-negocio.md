@@ -1,6 +1,6 @@
 # Anexo — Glosario de Negocio (EnergiTech · Dominio Demanda Energética)
 
-> Producto de trabajo de UNE 0078 §3.7.1.4 — *Repositorio del metadato de negocio (glosario de términos) poblado*.
+> Producto de trabajo de UNE 0078 3.7.1.4 — *Repositorio del metadato de negocio (glosario de términos) poblado*.
 > **Versión:** 1.0 · **Fecha:** 2026-04-09 · **Steward principal:** Dirección de Operaciones.
 
 ## Convenciones

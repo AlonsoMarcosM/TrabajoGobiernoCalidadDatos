@@ -1,6 +1,6 @@
 # Anexo — Catálogo de Datos (EnergiTech)
 
-> Producto de trabajo de UNE 0078 §3.7.1.4 — *Repositorio del metadato técnico (catálogo de datos) poblado*.
+> Producto de trabajo de UNE 0078 3.7.1.4 — *Repositorio del metadato técnico (catálogo de datos) poblado*.
 > **Versión:** 1.0 · **Fecha:** 2026-04-09 · **Steward principal:** CTO + Arquitecto del Dato.
 
 ## Convenciones

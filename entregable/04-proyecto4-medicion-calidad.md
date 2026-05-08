@@ -13,11 +13,11 @@ Crear un **modelo de calidad de datos** sobre los activos clave de EnergiTech (l
 
 | ID | Entregable | Ubicación |
 |---|---|---|
-| E4.1 | Selección y justificación de ≥ 3 características UNE 0081 | §4.1 |
-| E4.2 | Modelo de calidad EnergiTech (caract. → propiedades → medidas) | §4.2 |
-| E4.3 | Tabla de medidas con fórmulas, unidades y umbrales | §4.3 |
-| E4.4 | Justificación de los umbrales según el apetito de riesgo | §4.4 |
-| E4.5 | Diagrama gráfico de calidad (radar) | §4.5 |
+| E4.1 | Selección y justificación de ≥ 3 características UNE 0081 | 4.1 |
+| E4.2 | Modelo de calidad EnergiTech (caract. → propiedades → medidas) | 4.2 |
+| E4.3 | Tabla de medidas con fórmulas, unidades y umbrales | 4.3 |
+| E4.4 | Justificación de los umbrales según el apetito de riesgo | 4.4 |
+| E4.5 | Diagrama gráfico de calidad (radar) | 4.5 |
 
 ## 2. Criterio de aceptación
 
@@ -29,9 +29,9 @@ Crear un **modelo de calidad de datos** sobre los activos clave de EnergiTech (l
 
 | Apartado | Aporte |
 |---|---|
-| UNE 0081 §3.1.1 (15 características ISO/IEC 25012) | Catálogo de características inherentes / dependientes del sistema. |
-| UNE 0081 §3.2 (métricas para las propiedades) | Estructura de las medidas (granularidad, fórmula, escala). |
-| UNE 0081 §4.1 (establecer requisitos de la evaluación) | Marco para definir propósito, datos objetivo y rigurosidad. |
+| UNE 0081 3.1.1 (15 características ISO/IEC 25012) | Catálogo de características inherentes / dependientes del sistema. |
+| UNE 0081 3.2 (métricas para las propiedades) | Estructura de las medidas (granularidad, fórmula, escala). |
+| UNE 0081 4.1 (establecer requisitos de la evaluación) | Marco para definir propósito, datos objetivo y rigurosidad. |
 | UNE 0079 — Gestión de calidad del dato | Encaje en el ciclo planificación → control → aseguramiento → mejora (desarrollado en P5). |
 | ISO/IEC 25024:2015 | Cómo *medir* las propiedades. |
 
@@ -64,7 +64,7 @@ Crear un **modelo de calidad de datos** sobre los activos clave de EnergiTech (l
 
 ### 4.2 Modelo de calidad EnergiTech
 
-Estructura UNE 0081 §3.2: **Característica → Propiedad → Medida**.
+Estructura UNE 0081 3.2: **Característica → Propiedad → Medida**.
 
 ```mermaid
 flowchart TB
@@ -98,9 +98,9 @@ flowchart TB
 | M-AC-01 | Actualidad | Frescura de ingesta meteo | `bronze.meteo_zona` | `mediana(now − fecha_evento)` | Min | Por zona | Cada hora | ≤ 60 min (RQ-04) |
 | M-AC-02 | Actualidad | Frescura de telemetría | `bronze.lectura_smart_meter` | `mediana(now − timestamp_utc)` | Min | Por zona | Cada hora | ≤ 30 min |
 
-> Cada medida es una *property metric* en el sentido de UNE 0081 §3.2 / ISO 25024.
+> Cada medida es una *property metric* en el sentido de UNE 0081 3.2 / ISO 25024.
 
-#### 4.3.2 Diseño de las medidas (UNE 0081 §4.2.1)
+#### 4.3.2 Diseño de las medidas (UNE 0081 4.2.1)
 
 Cada medida lleva asociado:
 1. **Tipo** (ratio, conteo, mediana de tiempo).
@@ -132,7 +132,7 @@ FROM esperadas e LEFT JOIN recibidas r USING (id_zona_red, fecha);
 
 ### 4.4 Justificación de los umbrales (apetito de riesgo)
 
-UNE 0081 §4.2.2 — *"Definir los criterios de decisión para las métricas"*.
+UNE 0081 4.2.2 — *"Definir los criterios de decisión para las métricas"*.
 
 | Medida | Umbral | Riesgo si se incumple | Coste/Impacto operacional |
 |---|---|---|---|
@@ -149,7 +149,7 @@ UNE 0081 §4.2.2 — *"Definir los criterios de decisión para las métricas"*.
 
 ### 4.5 Visualización del modelo de calidad
 
-UNE 0081 §5.2 — diagrama gráfico (radar) de los resultados de evaluación. Esquema:
+UNE 0081 5.2 — diagrama gráfico (radar) de los resultados de evaluación. Esquema:
 
 ```mermaid
 %% Mockup conceptual; el render real se hará en BI cuando exista la primera medida.
@@ -193,7 +193,7 @@ Este proyecto cubre las fases **4.1–4.3** del proceso UNE 0081. Las fases 4.4 
 ## 6. Decisiones y supuestos
 
 - Se incluye **Actualidad** como cuarta característica además de las tres obligatorias por su criticidad en una organización de tiempo real (red eléctrica). El enunciado pide "al menos tres", y se documenta para evidenciar madurez.
-- Se trabaja sobre las características **inherentes** (UNE 0081 §3.1.1) por su independencia del sistema concreto. *Disponibilidad* y *Recuperabilidad* (dependientes del sistema) se consideran cubiertas por la operación de plataforma (no son objeto de este proyecto académico).
+- Se trabaja sobre las características **inherentes** (UNE 0081 3.1.1) por su independencia del sistema concreto. *Disponibilidad* y *Recuperabilidad* (dependientes del sistema) se consideran cubiertas por la operación de plataforma (no son objeto de este proyecto académico).
 - Los umbrales son los **objetivos de aceptación inicial**; pueden ajustarse tras la primera medición real (P5).
 
 ## 7. Referencias

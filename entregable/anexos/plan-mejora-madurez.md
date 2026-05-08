@@ -14,7 +14,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | El alcance del trabajo cubre el dominio Demanda; los procesos no se han adoptado como estándar de toda la organización. |
-| Proceso UNE | UNE 0077 §Estrategia + AP 3.1, AP 3.2 transversales. |
+| Proceso UNE | UNE 0077 Estrategia + AP 3.1, AP 3.2 transversales. |
 | Acción | Aprobar los seis documentos de proyecto como Política y Procedimientos formales. Publicar en intranet. Comunicar a Comité de Dirección y a líneas de negocio (Luz, Gas, Mantenimiento). |
 | Prioridad | **Alta** |
 | Responsable | CDO |
@@ -29,7 +29,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | El MDM Cliente y los repositorios de metadatos solo cubren parcialmente Luz; persisten silos en Gas y Mantenimiento. |
-| Proceso UNE | UNE 0078 §3.7, §3.10. |
+| Proceso UNE | UNE 0078 3.7, 3.10. |
 | Acción | Replicar el patrón aplicado a Demanda (P2 + P3) sobre los dominios Gas y Mantenimiento. |
 | Prioridad | Alta |
 | Responsable | Arquitecto del Dato + Comercializadora |
@@ -39,12 +39,12 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | KPI | M-CS-02 ≥ 0,98 también en Gas y Mantenimiento. |
 | Evidencia | Glosario, catálogo, diccionario y MDM extendidos. |
 
-### MEJ-03 · Implantar el proceso UNE 0079 §3.3 (Aseguramiento de la calidad)
+### MEJ-03 · Implantar el proceso UNE 0079 3.3 (Aseguramiento de la calidad)
 
 | Campo | Valor |
 |---|---|
 | Debilidad | Existe Planificación, Control y Mejora pero falta Aseguramiento sistemático. |
-| Proceso UNE | UNE 0079 §3.3. |
+| Proceso UNE | UNE 0079 3.3. |
 | Acción | Diseñar e implantar auditorías DQ trimestrales con muestreo estadístico independiente. |
 | Prioridad | Media |
 | Responsable | Resp. Calidad |
@@ -58,8 +58,8 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 
 | Campo | Valor |
 |---|---|
-| Debilidad | UNE 0078 §3.5 no abordada; las retenciones de bronze/silver/gold están definidas pero no la fase de archivo y borrado. |
-| Proceso UNE | UNE 0078 §3.5; RGPD art. 5.1.e (limitación de conservación). |
+| Debilidad | UNE 0078 3.5 no abordada; las retenciones de bronze/silver/gold están definidas pero no la fase de archivo y borrado. |
+| Proceso UNE | UNE 0078 3.5; RGPD art. 5.1.e (limitación de conservación). |
 | Acción | Definir POL-RET-02 que incluya archivo frío (S3 Glacier o equivalente), anonimización irreversible y certificación de borrado. |
 | Prioridad | Media |
 | Responsable | Arquitecto del Dato + DPO |
@@ -74,7 +74,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | Roles definidos en RACI pero sin plan formativo formal; competencias e-CF no mapeadas. |
-| Proceso UNE | UNE 0078 §3.11. |
+| Proceso UNE | UNE 0078 3.11. |
 | Acción | Mapear competencias e-CF (A.1, A.4, A.5, B.2, D.10, etc.) y diseñar plan formativo + carrera para los *stewards*. |
 | Prioridad | Media |
 | Responsable | RR.HH. + CDO |
@@ -89,7 +89,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | Cuadro de mandos limitado al dominio Demanda. |
-| Proceso UNE | UNE 0079 §3.2. |
+| Proceso UNE | UNE 0079 3.2. |
 | Acción | Extender el cuadro a Cliente (P3), Red y Mantenimiento. Capa semántica común para comparar dominios. |
 | Prioridad | Media |
 | Responsable | Resp. Calidad + Equipo BI |
@@ -104,7 +104,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | El control es por umbral; no se gestiona la variabilidad estadística (AP 4.1, 4.2). |
-| Proceso UNE | UNE 0079 §3.2 con técnicas cuantitativas. |
+| Proceso UNE | UNE 0079 3.2 con técnicas cuantitativas. |
 | Acción | Implementar cartas de control (Shewhart, EWMA) y *anomaly detection* sobre las series de medidas. |
 | Prioridad | Baja (mejora hacia Nivel 4) |
 | Responsable | Resp. Calidad + Equipo Data Science |
@@ -119,7 +119,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | Logging de accesos solo en capas silver/gold. Bronze y MDM Hub fuera del alcance. |
-| Proceso UNE | UNE 0078 §3.6 + ENS + RGPD art. 32. |
+| Proceso UNE | UNE 0078 3.6 + ENS + RGPD art. 32. |
 | Acción | Centralizar logs en SIEM con retención 12 m y dashboard de accesos a PII. |
 | Prioridad | **Alta** (riesgo regulatorio) |
 | Responsable | CISO + Arquitecto del Dato |
@@ -134,7 +134,7 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 | Campo | Valor |
 |---|---|
 | Debilidad | RACI definido pero sin SLA firmes con propietarios de dato. |
-| Proceso UNE | UNE 0077 + UNE 0079 §3.1. |
+| Proceso UNE | UNE 0077 + UNE 0079 3.1. |
 | Acción | Definir y firmar SLA por proceso (tiempo de respuesta, tiempo de cierre, calidad mínima publicable). |
 | Prioridad | Media |
 | Responsable | CDO |
@@ -148,8 +148,8 @@ Llevar a EnergiTech del **Nivel 2 (Gestionado)** al **Nivel 3 (Establecido)** tr
 
 | Campo | Valor |
 |---|---|
-| Debilidad | UNE 0078 §3.10 menciona "calcular el retorno de la inversión en la adopción del dato maestro"; no implantado. |
-| Proceso UNE | UNE 0078 §3.10. |
+| Debilidad | UNE 0078 3.10 menciona "calcular el retorno de la inversión en la adopción del dato maestro"; no implantado. |
+| Proceso UNE | UNE 0078 3.10. |
 | Acción | Definir KPI económicos: ahorro por reducción de duplicidades, mejora de previsión, reducción de reclamaciones. |
 | Prioridad | Baja |
 | Responsable | CDO + CFO |

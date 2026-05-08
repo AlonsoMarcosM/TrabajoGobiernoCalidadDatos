@@ -1,6 +1,6 @@
 # Anexo — Procedimientos de Medición de Calidad del Dato
 
-> Producto de trabajo de UNE 0079 §3.2 — *Control y monitorización de calidad del dato*.
+> Producto de trabajo de UNE 0079 3.2 — *Control y monitorización de calidad del dato*.
 > **Versión:** 1.0 · **Fecha:** 2026-04-30 · **Aprobador:** Responsable de Calidad del Dato.
 
 Cada procedimiento contiene los **10 campos** exigidos por el enunciado del Proyecto 5.
