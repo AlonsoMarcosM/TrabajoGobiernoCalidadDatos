@@ -91,6 +91,14 @@ flowchart LR
   P5 -.evidencias de procesos UNE 0079.-> P6
 ```
 
+> *Diagrama renderizado:* ![Trazabilidad inter-proyectos](imágenes/mermaid/00-resumen-ejecutivo__01.png)
+
+> *Evidencia OpenMetadata — la práctica se ha materializado en una instancia real de OpenMetadata (servicio aislado `energitech-demo`) que puede recorrerse en directo durante la defensa:*
+>
+> ![Home de OpenMetadata con la práctica cargada](imágenes/openmetadata/om-01-home.png)
+>
+> ![Linaje completo del producto de datos PD-01 (P1 → P2 → P3 → P4 → P5)](imágenes/openmetadata/om-17-lineage-completo.png)
+
 ## 6. Hallazgos principales
 
 1. **Nivel de madurez actual**: 2 (Gestionado), con elementos del nivel 3 en gestión de calidad. Objetivo realista a 12–18 meses: **nivel 3 transversal** y **nivel 4 en procesos críticos de calidad**.

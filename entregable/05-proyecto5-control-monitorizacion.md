@@ -100,6 +100,14 @@ flowchart LR
     I --> A
 ```
 
+> *Diagrama renderizado:* ![Ciclo UNE 0079 3.2 — medir, comparar, escalar, corregir, registrar](imágenes/mermaid/05-proyecto5-control-monitorizacion__01.png)
+
+> *Evidencia OpenMetadata — cada activo monitorizado registra su característica UNE 0081 y su steward en custom properties; los términos del glosario enlazan la regla con el activo medido:*
+>
+> ![Custom properties por tabla (UNE0081caracteristica, stewardEnergiTech)](imágenes/openmetadata/om-11-custom-prop-values.png)
+>
+> ![Término PrevisionDemanda enlazado al producto de datos PD-01](imágenes/openmetadata/om-15-glossary-prevision.png)
+
 **Severidad y SLA de respuesta:**
 
 | Severidad | Disparador | SLA respuesta | SLA cierre |
@@ -151,6 +159,8 @@ flowchart TB
         I2[PM-CO-01 zona NORTE]
     end
 ```
+
+> *Diagrama renderizado:* ![Mockup conceptual del cuadro de mandos de calidad](imágenes/mermaid/05-proyecto5-control-monitorizacion__02.png)
 
 **Herramientas candidatas:**
 - **OpenMetadata** (Nota 8) — catálogo + perfiles + tests de calidad.

@@ -94,6 +94,8 @@ classDiagram
     ClienteMaestro "1" o-- "1..*" FuenteCalidad
 ```
 
+> *Diagrama renderizado:* ![Modelo conceptual del Cliente Maestro](imágenes/mermaid/03-proyecto3-mdm-y-arquitectura__01.png)
+
 #### 4.1.2 Clasificación de atributos
 
 Siguiendo la práctica MDM extendida (DAMA-DMBOK 2.0 + UNE 0078 3.10):
@@ -253,6 +255,20 @@ flowchart LR
     class KAFKA,ETL,MDM_ETL act;
     class BI,MIA,APIS,OPS con;
 ```
+
+> *Diagrama renderizado:* ![Arquitectura de datos por capas con MDM Hub](imágenes/mermaid/03-proyecto3-mdm-y-arquitectura__02.png)
+
+> *Evidencia OpenMetadata — la arquitectura por capas se materializa en el database `energitech` con schemas `crm/red/silver/gold` y se navega por linaje:*
+>
+> ![Servicio energitech-demo con la base energitech](imágenes/openmetadata/om-03-service-energitech.png)
+>
+> ![Database energitech con sus 4 schemas (capas medallion + CRM)](imágenes/openmetadata/om-04-database-schemas.png)
+>
+> ![Tabla gold.prevision_demanda — vista de Schema](imágenes/openmetadata/om-08-prevision-schema.png)
+>
+> ![Linaje crm.cliente → crm.contrato (silos resueltos por MDM)](imágenes/openmetadata/om-07-cliente-lineage.png)
+>
+> ![Linaje completo upstream del producto de datos PD-01](imágenes/openmetadata/om-17-lineage-completo.png)
 
 #### 4.4.3 Capas y responsabilidad (modelos conceptual/lógico/físico)
 

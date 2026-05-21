@@ -52,6 +52,11 @@ flowchart LR
     SLM --> PRV
 ```
 
+> *Diagrama renderizado:* ![Mapa de lineage de alto nivel del dominio Demanda](../imágenes/mermaid/catalogo-datos__01.png)
+
+> *Evidencia OpenMetadata — el mismo lineage navegable sobre el modelo simplificado cargado en `energitech-demo`:*
+> ![Lineage completo del producto de datos PD-01](../imágenes/openmetadata/om-17-lineage-completo.png)
+
 ## Control de cambios
 
 | Versión | Fecha | Cambio | Autor |

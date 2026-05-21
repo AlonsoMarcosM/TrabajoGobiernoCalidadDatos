@@ -134,7 +134,21 @@ graph TD
     class F1,F2,F3,F4 ope;
 ```
 
+> *Diagrama renderizado:* ![Trazabilidad entre los tres tipos de metadatos](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__01.png)
+
 > Cada relación se materializa en OpenMetadata mediante referencias `glossaryTerm ↔ table ↔ column`, cubriendo el resultado de proceso *"Establecer las relaciones entre los metadatos"* (UNE 0078 3.7.1.3).
+
+> *Evidencia OpenMetadata — los tres repositorios materializados sobre el mismo metamodelo:*
+>
+> ![Listado de Database Services con energitech-demo](imágenes/openmetadata/om-02-services.png)
+>
+> ![Schema crm con las tablas cliente y contrato](imágenes/openmetadata/om-05-schema-crm.png)
+>
+> ![Tabla crm.cliente con columnas, restricciones y tags PII](imágenes/openmetadata/om-06-cliente-schema.png)
+>
+> ![Glosario de negocio EnergiTechNegocio](imágenes/openmetadata/om-14-glossary.png)
+>
+> ![Búsqueda global "cliente": tabla, columnas y términos relacionados](imágenes/openmetadata/om-16-search-cliente.png)
 
 ### 4.3 Gestión del ciclo de vida del dato
 
@@ -164,6 +178,8 @@ stateDiagram-v2
       Modelo predictivo · cuadro de mandos
     end note
 ```
+
+> *Diagrama renderizado:* ![Ciclo de vida del dato — cuatro fases del enunciado](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__02.png)
 
 #### 4.3.2 Controles por fase (resultado de UNE 0078 3.12.1.2)
 
@@ -195,6 +211,20 @@ flowchart LR
     class BR,SI,GO,HIS sto;
     class ING,TRA,EXP act;
 ```
+
+> *Diagrama renderizado:* ![Flujo entre repositorios (medallion bronze/silver/gold)](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__03.png)
+
+> *Evidencia OpenMetadata — clasificación por capa y por sensibilidad sobre los activos del flujo:*
+>
+> ![Classifications EnergiTech* con sus tags](imágenes/openmetadata/om-12-classifications.png)
+>
+> ![Tag EnergiTechSensibilidad.PII con las columnas asociadas](imágenes/openmetadata/om-13-tag-pii-assets.png)
+>
+> ![Custom properties del tipo table (UNE0078proceso, UNE0081caracteristica, stewardEnergiTech, capaMedallion)](imágenes/openmetadata/om-10-custom-properties.png)
+>
+> ![Valores de las custom properties sobre la tabla gold.prevision_demanda](imágenes/openmetadata/om-11-custom-prop-values.png)
+>
+> ![Término PrevisionDemanda del glosario con activos relacionados](imágenes/openmetadata/om-15-glossary-prevision.png)
 
 ### 4.4 Políticas asociadas al ciclo de vida
 

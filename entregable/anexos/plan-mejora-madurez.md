@@ -180,6 +180,8 @@ gantt
     MEJ-07 SPC                     :m7, 2026-09-15, 360d
 ```
 
+> *Diagrama renderizado:* ![Cronograma global del plan de mejora (Gantt)](../imágenes/mermaid/plan-mejora-madurez__01.png)
+
 ## 4. Coste estimado
 
 | Concepto | Coste anualizado |

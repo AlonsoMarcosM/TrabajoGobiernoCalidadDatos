@@ -83,6 +83,18 @@ flowchart TB
     AC --> AC2[Antigüedad del dato consumido]
 ```
 
+> *Diagrama renderizado:* ![Modelo de calidad EnergiTech (característica → propiedad)](imágenes/mermaid/04-proyecto4-medicion-calidad__01.png)
+
+> *Evidencia OpenMetadata — las características UNE 0081 medidas sobre cada tabla quedan registradas como custom property `UNE0081caracteristica`, y la sensibilidad PII se materializa con tags:*
+>
+> ![Custom properties con las características UNE 0081 por activo](imágenes/openmetadata/om-11-custom-prop-values.png)
+>
+> ![Classifications EnergiTech* (Sensibilidad, Capa, Criticidad)](imágenes/openmetadata/om-12-classifications.png)
+>
+> ![Tag PII y columnas asociadas (input de la medida M-CO-02)](imágenes/openmetadata/om-13-tag-pii-assets.png)
+>
+> ![Schema de crm.cliente con tags de columna marcando PII](imágenes/openmetadata/om-06-cliente-schema.png)
+
 ### 4.3 Métodos de medición
 
 #### 4.3.1 Tabla maestra de medidas
@@ -162,6 +174,8 @@ flowchart LR
     end
 ```
 
+> *Diagrama renderizado:* ![Radar conceptual de calidad EnergiTech (objetivo vs. medido)](imágenes/mermaid/04-proyecto4-medicion-calidad__02.png)
+
 Lectura inicial ilustrativa (números a poblar en P5 con la primera ejecución):
 - Consistencia (87) está **por debajo** del umbral → motiva la implantación urgente del MDM (P3).
 - Completitud (94) sufre por las series rotas en zonas rurales con mala cobertura.
@@ -177,6 +191,8 @@ flowchart LR
     R3 --> R4[4.4 Ejecutar<br/>(P5)]
     R4 --> R5[4.5 Finalizar<br/>(P5)]
 ```
+
+> *Diagrama renderizado:* ![Proceso UNE 0081 de evaluación de calidad](imágenes/mermaid/04-proyecto4-medicion-calidad__03.png)
 
 Este proyecto cubre las fases **4.1–4.3** del proceso UNE 0081. Las fases 4.4 y 4.5 (ejecución, informes y disposición) se implementan en P5.
 
