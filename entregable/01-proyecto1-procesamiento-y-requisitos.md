@@ -79,8 +79,6 @@ flowchart LR
     D1 -- No --> T10 --> T2
 ```
 
-> *Diagrama renderizado:* ![BPMN del proceso de previsión de demanda](imágenes/mermaid/01-proyecto1-procesamiento-y-requisitos__01.png)
-
 **Leyenda:** S = evento de inicio, T*n* = tarea, D1 = compuerta exclusiva, E = evento fin.
 
 #### 4.1.2 Catálogo de actividades — datos de entrada/salida e instrucciones de procesamiento
@@ -171,8 +169,6 @@ graph LR
     class RB1,RS1,RS2,RQ1,RQ2 req;
     class D1,D2 dat;
 ```
-
-> *Diagrama renderizado:* ![Trazabilidad fuentes → requisitos → datos](imágenes/mermaid/01-proyecto1-procesamiento-y-requisitos__02.png)
 
 > Este grafo materializa la **matriz de trazabilidad de requisitos del dato** declarada como producto de trabajo en UNE 0078 3.3.1.4.
 

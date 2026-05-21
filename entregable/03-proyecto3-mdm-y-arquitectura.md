@@ -94,8 +94,6 @@ classDiagram
     ClienteMaestro "1" o-- "1..*" FuenteCalidad
 ```
 
-> *Diagrama renderizado:* ![Modelo conceptual del Cliente Maestro](imágenes/mermaid/03-proyecto3-mdm-y-arquitectura__01.png)
-
 #### 4.1.2 Clasificación de atributos
 
 Siguiendo la práctica MDM extendida (DAMA-DMBOK 2.0 + UNE 0078 3.10):
@@ -255,8 +253,6 @@ flowchart LR
     class KAFKA,ETL,MDM_ETL act;
     class BI,MIA,APIS,OPS con;
 ```
-
-> *Diagrama renderizado:* ![Arquitectura de datos por capas con MDM Hub](imágenes/mermaid/03-proyecto3-mdm-y-arquitectura__02.png)
 
 > *Evidencia OpenMetadata — la arquitectura por capas se materializa en el database `energitech` con schemas `crm/red/silver/gold` y se navega por linaje:*
 >

@@ -114,8 +114,6 @@ flowchart TD
     GE --> EMP
 ```
 
-> *Diagrama renderizado:* ![Jerarquías del Cliente Maestro](../imágenes/mermaid/modelo-mdm-cliente__01.png)
-
 ## Control de cambios
 
 | Versión | Fecha | Cambio | Autor |

@@ -91,8 +91,6 @@ flowchart LR
   P5 -.evidencias de procesos UNE 0079.-> P6
 ```
 
-> *Diagrama renderizado:* ![Trazabilidad inter-proyectos](imágenes/mermaid/00-resumen-ejecutivo__01.png)
-
 > *Evidencia OpenMetadata — la práctica se ha materializado en una instancia real de OpenMetadata (servicio aislado `energitech-demo`) que puede recorrerse en directo durante la defensa:*
 >
 > ![Home de OpenMetadata con la práctica cargada](imágenes/openmetadata/om-01-home.png)

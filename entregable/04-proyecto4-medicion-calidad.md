@@ -83,8 +83,6 @@ flowchart TB
     AC --> AC2[Antigüedad del dato consumido]
 ```
 
-> *Diagrama renderizado:* ![Modelo de calidad EnergiTech (característica → propiedad)](imágenes/mermaid/04-proyecto4-medicion-calidad__01.png)
-
 > *Evidencia OpenMetadata — las características UNE 0081 medidas sobre cada tabla quedan registradas como custom property `UNE0081caracteristica`, y la sensibilidad PII se materializa con tags:*
 >
 > ![Custom properties con las características UNE 0081 por activo](imágenes/openmetadata/om-11-custom-prop-values.png)
@@ -174,8 +172,6 @@ flowchart LR
     end
 ```
 
-> *Diagrama renderizado:* ![Radar conceptual de calidad EnergiTech (objetivo vs. medido)](imágenes/mermaid/04-proyecto4-medicion-calidad__02.png)
-
 Lectura inicial ilustrativa (números a poblar en P5 con la primera ejecución):
 - Consistencia (87) está **por debajo** del umbral → motiva la implantación urgente del MDM (P3).
 - Completitud (94) sufre por las series rotas en zonas rurales con mala cobertura.
@@ -191,8 +187,6 @@ flowchart LR
     R3 --> R4[4.4 Ejecutar<br/>(P5)]
     R4 --> R5[4.5 Finalizar<br/>(P5)]
 ```
-
-> *Diagrama renderizado:* ![Proceso UNE 0081 de evaluación de calidad](imágenes/mermaid/04-proyecto4-medicion-calidad__03.png)
 
 Este proyecto cubre las fases **4.1–4.3** del proceso UNE 0081. Las fases 4.4 y 4.5 (ejecución, informes y disposición) se implementan en P5.
 

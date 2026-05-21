@@ -134,8 +134,6 @@ graph TD
     class F1,F2,F3,F4 ope;
 ```
 
-> *Diagrama renderizado:* ![Trazabilidad entre los tres tipos de metadatos](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__01.png)
-
 > Cada relación se materializa en OpenMetadata mediante referencias `glossaryTerm ↔ table ↔ column`, cubriendo el resultado de proceso *"Establecer las relaciones entre los metadatos"* (UNE 0078 3.7.1.3).
 
 > *Evidencia OpenMetadata — los tres repositorios materializados sobre el mismo metamodelo:*
@@ -179,8 +177,6 @@ stateDiagram-v2
     end note
 ```
 
-> *Diagrama renderizado:* ![Ciclo de vida del dato — cuatro fases del enunciado](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__02.png)
-
 #### 4.3.2 Controles por fase (resultado de UNE 0078 3.12.1.2)
 
 | Fase | Controles de validación | Reglas concretas (caso EnergiTech) |
@@ -211,8 +207,6 @@ flowchart LR
     class BR,SI,GO,HIS sto;
     class ING,TRA,EXP act;
 ```
-
-> *Diagrama renderizado:* ![Flujo entre repositorios (medallion bronze/silver/gold)](imágenes/mermaid/02-proyecto2-metadatos-y-ciclo-vida__03.png)
 
 > *Evidencia OpenMetadata — clasificación por capa y por sensibilidad sobre los activos del flujo:*
 >

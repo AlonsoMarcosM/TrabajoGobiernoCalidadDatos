@@ -59,8 +59,6 @@ flowchart LR
     DIM --> CAP
 ```
 
-> *Diagrama renderizado:* ![Modelo de evaluación UNE 0080 — dimensión proceso × capacidad](imágenes/mermaid/06-proyecto6-madurez-une0080__01.png)
-
 ### 4.2 Inventario de evidencias
 
 | Proceso evaluado | Origen | Evidencia generada en P1–P5 |
@@ -149,8 +147,6 @@ flowchart LR
     style N3 fill:#e8f4ff,stroke:#3a6,stroke-width:2px
 ```
 
-> *Diagrama renderizado:* ![Nivel de madurez actual y objetivo (MAMD)](imágenes/mermaid/06-proyecto6-madurez-une0080__02.png)
-
 > *Evidencia OpenMetadata — el conjunto de productos de trabajo (catálogo, glosario, tags, custom properties, lineage) demuestra capacidad gestionada y es la base para evaluar AP 2.1/2.2:*
 >
 > ![Servicio energitech-demo: evidencia de proceso UNE 0078 3.7 y 3.8](imágenes/openmetadata/om-02-services.png)
@@ -202,8 +198,6 @@ gantt
     MEJ-06 Dashboard multi-dominio  :2026-07-01, 180d
     MEJ-07 SPC sobre medidas        :2026-09-15, 360d
 ```
-
-> *Diagrama renderizado:* ![Hoja de ruta Gantt — 12 meses](imágenes/mermaid/06-proyecto6-madurez-une0080__03.png)
 
 ## 6. Trazabilidad con otros proyectos
 
