@@ -6,4 +6,4 @@ El workflow `.github/workflows/pages.yml` construye el repositorio con Jekyll y 
 
 La web es evidencia documental. La reproducción operativa de OpenMetadata sigue los scripts del repositorio y requiere un entorno local controlado.
 
-Última verificación de configuración: 2026-06-22.
+Última verificación pública: 2026-06-22, respuesta HTTP 200 y workflow completo.
