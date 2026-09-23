@@ -9,9 +9,11 @@
 ![Markdown](https://img.shields.io/badge/Markdown-CommonMark-000000?logo=markdown&logoColor=white)
 ![OpenMetadata](https://img.shields.io/badge/OpenMetadata-1.12-3361FF?logo=apache&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-7-5391FE?logo=powershell&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-7-5391FE?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTIzLjE4MSAyLjk3NGMuNTY4IDAgLjkyMy40NjMuNzkyIDEuMDM1bC0zLjY1OSAxNS45ODJjLS4xMy41NzItLjY5NyAxLjAzNS0xLjI2NSAxLjAzNUguODE5Yy0uNTY4IDAtLjkyMy0uNDYzLS43OTItMS4wMzVMMy42ODYgNC4wMDljLjEzLS41NzIuNjk3LTEuMDM1IDEuMjY1LTEuMDM1em0tOC4zNzUgOS4zNDZjLjI1MS0uMzk0LjIyNy0uOTA1LS4wOS0xLjI0M0w5LjEyMiA1LjEyNWMtLjM4LS40MDQtMS4wMzctLjQwNy0xLjQ2Ni0uMDAzYy0uNDI5LjQwMi0uNDY4IDEuMDU2LS4wODggMS40Nmw0LjY2MiA0Ljk2di4xMWwtNy40MiA1LjM3NGMtLjQ1LjMyNy0uNTMzLjk3Ny0uMTg3IDEuNDUzcy45OTEuNTk3IDEuNDQuMjdsOC4yMjktNS45MWMuMjgtLjE5Ni40MzgtLjM2NS41MTQtLjUyem0tMi43OTYgNC4zOTlhLjkzLjkzIDAgMCAwLS45MzQuOTIzYzAgLjUxLjQxOC45MjMuOTM0LjkyM2g0LjQzM2EuOTMuOTMgMCAwIDAgLjkzNC0uOTIzYS45My45MyAwIDAgMC0uOTM0LS45MjN6Ii8%2BPC9zdmc%2B)
 ![UNE 0077–0081](https://img.shields.io/badge/UNE-0077%E2%80%930081-005a9c)
 ![License](https://img.shields.io/badge/License-Academic-blue)
+
+![Linaje en OpenMetadata del caso EnergiTech, desde punto de suministro y contrato hasta lecturas silver, curva gold y previsión de demanda](docs/portada.png)
 
 ---
 
